@@ -1,0 +1,14 @@
+{
+  "name": "a-jekyll-experiment",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Charlie Tanksley <charlie@tanksley.me>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-jekyll": "~0.4.1"
+  }
+}
