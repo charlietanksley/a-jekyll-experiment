@@ -1,13 +1,32 @@
 ---
 layout: default
 title: Testing out Jekyll
+categories: boom bang
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>bo</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+
+  <ul>
+    {% for page in site.pages %}
+      {% if page.categories contains 'nerd' %}
+        <li><a href='{{page.url}}'>{{page.categories}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h2>Europe</h2>
+  <ul>
+    {% for page in site.pages %}
+      {% if page.categories contains 'europe' %}
+        <li><a href='{{page.url}}'>{{page.categories}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
 </div>
